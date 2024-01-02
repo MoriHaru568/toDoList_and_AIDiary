@@ -1,0 +1,14 @@
+<ul class="list-group" id="task_list">
+  {% for task in tasks %}
+  <li class="list-group-item col-8 d-flex">
+    <input type="checkbox" class="form-check-input me-1" />
+    <label
+      class="form-check-label text-left"
+      id="task-{{ loop.index }}"
+      for="firstCheckbox"
+      >{{ task.title }}</label
+    >
+    <i class="bi bi-trash ms-auto trashbutton" id="trash-{{ loop.index }}"></i>
+  </li>
+  {% endfor %}
+</ul>

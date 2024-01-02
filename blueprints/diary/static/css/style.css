@@ -1,0 +1,159 @@
+/* 使う配色：#8EDAE5 #F99695 #F0E68C #676F74 */
+/* 使う配色：#7EC2C2 #9DDCDC #FFF4E1 #E67A7A */
+body {
+  height: 100vh;
+}
+.nav-link,
+.nav-link:hover {
+  color: white;
+}
+
+.tabs,
+.header {
+  background-color: #8edae5;
+}
+
+.do {
+  background-color: aqua;
+}
+
+.check {
+  background-color: black;
+}
+/* ボタンのカスタム */
+.bi-plus-circle-fill,
+.bi-person-circle {
+  color: white;
+}
+
+.form-check-input:checked + label {
+  text-decoration: line-through;
+}
+.btn-ham,
+.btn-ham:hover {
+  background-color: #f99695;
+  border-color: #f99695;
+  color: white;
+}
+
+.offcanvas-start {
+  width: 250px;
+}
+
+.offcanvas-title {
+  color: #8edae5;
+}
+
+.calendar-head {
+  color: white;
+  background-color: #8edae5;
+}
+
+/* 土曜日と日曜日のセルに色を適用 */
+th.sunday,
+th.saturday {
+  background-color: #f99695; /* 任意の背景色 */
+  color: white; /* 任意のテキスト色 */
+}
+
+.calendar-table {
+  color: #676f74;
+}
+#gpt-area {
+  max-height: 50vh; /* 高さの最大値を80%に設定 */
+  overflow: auto;
+}
+
+.title-area {
+  background-color: #f6f0b9;
+}
+
+/* 吹き出し */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.chat {
+  display: flex;
+  gap: 0 15px;
+  margin-bottom: 0.5rem;
+}
+
+.chat-icon {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  border: 3px solid #8edae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #8edae5;
+  color: white;
+}
+
+.chat-text {
+  word-wrap: break-word;
+  white-space: normal;
+  display: inline-block;
+  position: relative;
+  max-width: 80%;
+  margin: 0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  color: #676f74;
+  font-size: 0.875rem;
+}
+
+.chat-text.left {
+  background-color: #cceef3;
+}
+
+.chat-text.right {
+  background-color: #fddedd;
+  margin: 0 10px 0 auto;
+}
+
+.chat-text::before {
+  position: absolute;
+  top: -5px;
+  width: 20px;
+  height: 30px;
+  content: "";
+}
+
+.chat-text.left::before {
+  left: -10px;
+  border-radius: 0 0 0 15px;
+  box-shadow: -3px -15px 0 -7px #cceef3 inset;
+}
+
+.chat-text.right::before {
+  right: -10px;
+  border-radius: 0 0 15px 0;
+  box-shadow: 3px -15px 0 -7px #fddedd inset;
+}
+
+/* クリックで選択された日付のスタイル */
+.selected-date {
+  background-color: #f0e68c !important; /* 選択された日付の背景色 */
+  color: white; /* 選択された日付のテキスト色 */
+}
+#diary-comment {
+  border-radius: 10px;
+  border-color: #faaead;
+  border-width: 3px;
+  box-shadow: none;
+  padding: 2px 8px;
+  background-color: white;
+  resize: none;
+}
+
+.bi-cursor-fill {
+  color: #676f74;
+}
+
+.active-button {
+  color: #f99695; /* ボタンの背景色を変更 */
+  cursor: pointer; /* カーソルをポインターに変更 */
+}

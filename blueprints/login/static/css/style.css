@@ -1,0 +1,36 @@
+/* 使う配色：#28385E #516C8D #6A91C1 #CCCCCC */
+.nav-link,
+.nav-link:hover {
+  color: #cccccc;
+}
+
+.tabs,
+.header {
+  background-color: #28385e;
+}
+
+.do {
+  background-color: aqua;
+}
+
+.check {
+  background-color: black;
+}
+/* ボタンのカスタム */
+.bi-plus-circle-fill {
+  color: #cccccc;
+}
+
+.active-button {
+  color: #516c8d; /* ボタンの背景色を変更 */
+  cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+.form-check-input:checked + label {
+  text-decoration: line-through;
+}
+
+.btn-primary {
+  background-color: #516c8d;
+  border-color: #516c8d;
+}

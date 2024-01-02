@@ -1,0 +1,22 @@
+<div id="chat-area">
+  <div class="d-flex justify-content-around title-area">
+    <div class="diary-date" id="diary-date">日付{{ date }}</div>
+  </div>
+  <div id="gpt-area">
+    <div class="mt-3"></div>
+    {% for task in chats %} {% if task['role']=="robot" %}
+    <div class="chat">
+      <div class="chat-icon">
+        <i class="bi bi-reddit"></i>
+      </div>
+      <div class="chat-text left">
+        <p>{{ task['content'] }}</p>
+      </div>
+    </div>
+    {% elif task['role']=="user" %}
+    <div class="chat">
+      <p class="chat-text right">{{ task['content'] }}</p>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+</div>
